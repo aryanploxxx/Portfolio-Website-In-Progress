@@ -44,11 +44,11 @@ body {
         position: sticky;
     }
 
-    .part1-left-avatar {
-        width: 35px;
-        height: 35px;
-        background-color: #b7ab98;
-        border-radius: 50%;
+    .part1-left-avatar img {
+        width: 55px;
+        /* height: 35px; */
+        /* background-color: #b7ab98; */
+        /* border-radius: 50%; */
         /* margin-left: 10px; */
     }
 
@@ -115,9 +115,9 @@ body {
         gap: 10px;
         font-family: 'Gilroy';
         font-weight: 600;
-        color: #fff;
+        color: #b7ab98;
         background-color: transparent;
-        border: 2px solid white;
+        border: 2px solid #b7ab98;
     }
 
     .part3 img {
@@ -132,7 +132,7 @@ body {
 
     .container2  {
         /* border: 1px solid white; */
-        height: 100vh;
+        height: 90vh;
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -167,7 +167,7 @@ body {
 
     .container3 {
         /* border: 1px solid white; */
-        height: 100vh;
+        height: 80vh;
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -218,12 +218,96 @@ body {
     }
 
 
+/* ====================================== */
+
+    .container4 {
+        /* border: 1px solid white; */
+        height: 70vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        background-color: #070707;
+        /* align-items: flex-start; */
+        justify-content: center;
+        /* align-items: center; */
+        color:#b7ab98;
+        font-weight: 600;
+        font-size: 3.5vmax;
+    }
+
+    .container4-inner {
+        max-width: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 5vw;
+        gap: 20px;
+    }
+
+    .socials ul {
+        list-style-type: none; /* Remove default bullet */
+        padding-left: 0; /
+    }
+
+    .socials ul li {
+        position: relative; /* Required for positioning the custom bullet */
+        padding-left: 2em; 
+        padding: 0;
+        margin: 0;
+        /* color: red; */
+    }
+
+    .socials ul li a {
+        text-decoration: none;
+        color: #b7ab98;
+    }
+    
+    .socials ul li:before {
+        content: '\25E5'; /* Unicode value for bullet (•) */
+        color:#eb5939;
+        padding-right: 15px;
+    }
+
+    .personal {
+        padding-left: 5vw;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .personal .value {
+        font-size: 2.5vmax;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #b7ab98;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 
 
-
-
-
-
+    
 }
 
 
