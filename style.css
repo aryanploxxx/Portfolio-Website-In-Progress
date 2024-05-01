@@ -146,7 +146,7 @@ body {
 
     .container2 p {
         color:#b7ab98;
-        font-size: 5.5vmax;
+        font-size: 5vmax;
         /* font-size: 4.5vmax; */
 /* reduce it to the above value in bog screens */
         text-wrap: wrap;
